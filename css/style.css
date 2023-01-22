@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f6f6f6;
+}
+
+nav{
+    background: #008489;
+    height: 66px;
+}
+
+nav * {
+    color: white;
+}
+
+nav .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+nav .logo-text{
+    margin: 8px;
+}
+
+nav .logo h1{
+    font-size: 30px;
+}
+
+nav .logo-text span{
+    color: #05f7ff;
+}
+
+nav ul{
+    float: right;
+    list-style: none;
+}
+
+nav ul li{
+    float: left;
+    position: relative;
+}
+
+nav ul li a{
+    display: block;
+    padding: 19px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: #006669;
+    transition: 0.5s;
+}
+
+nav ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+nav ul li ul li{
+    width: 100%;
+}
+
+nav ul li ul li a{
+    padding: 10px;
+    background-color: white;
+    color: #444;
+}
+
+nav ul li ul li a.Logout{
+    color: red;
+}
+
+nav ul li ul li a:hover{
+    background: #d5d6d6;
+}
+
+nav .menu-toggle{
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    nav{
+        position: relative;
+    }
+    nav ul{
+        width: 100%;
+        background: #0E94A0;
+        /* max-height: 0px; */
+        overflow: hidden;
+    }
+    /* .showing{
+        max-height: 100em;
+    } */
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li ul{
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    nav ul li ul li a{
+        background: #0E94A0;
+        color: white;
+        padding-left: 50px;
+    }
+    nav ul li ul li a:hover{
+        background: #006669;
+    }
+    nav .menu-toggle{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+    nav .logo {
+        margin-left: .5em;
+    }
+}
